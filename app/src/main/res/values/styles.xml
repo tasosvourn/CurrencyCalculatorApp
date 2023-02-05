@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Typography -->
+    <style name="TextAppearance">
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/gray_03</item>
+    </style>
+
+    <style name="TextAppearance.Light">
+        <item name="fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="TextAppearance.Medium">
+        <item name="fontFamily">@font/ubuntu_medium</item>
+    </style>
+
+    <style name="TextAppearance.Bold">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <style name="TextAppearance_H1">
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/gray_03</item>
+    </style>
+
+    <style name="TextAppearance_H1.Light">
+        <item name="fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="TextAppearance_H1.Medium">
+        <item name="fontFamily">@font/ubuntu_medium</item>
+    </style>
+
+    <style name="TextAppearance_H1.Bold">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <style name="TextAppearance_H2">
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/gray_03</item>
+    </style>
+
+    <style name="TextAppearance_H2.Light">
+        <item name="fontFamily">@font/ubuntu_light</item>
+    </style>
+
+    <style name="TextAppearance_H2.Medium">
+        <item name="fontFamily">@font/ubuntu_medium</item>
+    </style>
+
+    <style name="TextAppearance_H2.Bold">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <!-- Button -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/gray_70</item>
+        <item name="android:textColor">@color/gray_03</item>
+        <item name="android:textAppearance">@style/TextAppearance.Light</item>
+        <item name="shapeAppearanceOverlay">@style/RoundedButton</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/primary_button_margin_start</item>
+        <item name="strokeColor">@color/gray_30</item>
+        <item name="android:paddingVertical">20dp</item>
+
+    </style>
+
+    <style name="RoundedButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_size</item>
+    </style>
+</resources>
