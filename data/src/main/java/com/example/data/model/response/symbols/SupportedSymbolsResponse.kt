@@ -8,5 +8,5 @@ class SupportedSymbolsResponse : BaseResponse() {
     var success: Boolean? = null
 
     @SerializedName("symbols")
-    var symbols: HashMap<String, String>? = null
+    var symbols: HashMap<String, String> = hashMapOf()
 }

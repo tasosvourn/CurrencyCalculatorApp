@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_90"
-    tools:context=".MainActivity">
+    tools:context=".features.CalculatorCurrencyConverterActivity">
 
     <TextView
         android:id="@+id/expression"
@@ -16,7 +16,6 @@
         android:lines="1"
         android:paddingHorizontal="@dimen/padding_horizontal"
         android:paddingVertical="@dimen/padding_vertical"
-        app:layout_constraintBottom_toTopOf="@+id/current_currency"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,41 +26,70 @@
         style="@style/TextAppearance_H1.Medium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/reply_blue_700"
         android:gravity="end"
         android:lines="1"
         android:paddingHorizontal="@dimen/padding_horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/current_currency"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/current_currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_from"
         tools:text="65" />
 
     <TextView
-        android:id="@+id/current_currency"
+        android:id="@+id/text_from"
+        style="@style/TextAppearance.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_text"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintStart_toStartOf="@+id/spinner_from"
+        app:layout_constraintTop_toBottomOf="@+id/expression" />
+
+    <Spinner
+        android:id="@+id/spinner_from"
         style="@style/TextAppearance_H1.Bold"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray_03"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_from"
+        tools:text="EUR" />
+
+    <TextView
+        android:id="@+id/conversion_result"
+        style="@style/TextAppearance_H1.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/reply_blue_800"
         android:gravity="end"
         android:lines="1"
         android:paddingHorizontal="@dimen/padding_horizontal"
-        android:paddingVertical="@dimen/padding_vertical"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toStartOf="@id/result"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="EUR" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_to"
+        tools:text="65" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/text_to"
+        style="@style/TextAppearance.Light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="@dimen/padding_horizontal"
-        app:layout_constraintBottom_toBottomOf="@id/current_currency"
-        app:layout_constraintStart_toStartOf="@+id/current_currency"
-        app:layout_constraintTop_toTopOf="@+id/current_currency"
-        app:srcCompat="@drawable/dropdown"
-        app:tint="@color/gray_03"
-        tools:ignore="ContentDescription" />
+        android:text="@string/to_text"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        style="@style/TextAppearance_H1.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray_03"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_to"
+        tools:text="EUR" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"

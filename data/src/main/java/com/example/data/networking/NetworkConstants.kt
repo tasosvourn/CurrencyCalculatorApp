@@ -6,7 +6,7 @@ package com.example.data.networking
 object Urls {
 
     const val SYMBOLS = "symbols"
-    const val CONVERT = "convert"
+    const val LATEST = "latest"
 
 }
 

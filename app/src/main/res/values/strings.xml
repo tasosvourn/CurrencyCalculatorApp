@@ -14,8 +14,11 @@
     <string name="number_9">9</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
-    <string name="multiply">x</string>
+    <string name="multiply">*</string>
     <string name="all_clear">AC</string>
     <string name="delete">C</string>
     <string name="divisor">/</string>
+    <string name="spinner_title">Select the currency you want to convert to</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
 </resources>

@@ -12,6 +12,10 @@
         <item name="fontFamily">@font/ubuntu_light</item>
     </style>
 
+    <style name="TextAppearance.Light.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
     <style name="TextAppearance.Medium">
         <item name="fontFamily">@font/ubuntu_medium</item>
     </style>
@@ -60,13 +64,13 @@
     <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/gray_70</item>
         <item name="android:textColor">@color/gray_03</item>
-        <item name="android:textAppearance">@style/TextAppearance.Light</item>
+        <item name="android:textAppearance">@style/TextAppearance.Light.Small</item>
         <item name="shapeAppearanceOverlay">@style/RoundedButton</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/primary_button_margin_start</item>
         <item name="strokeColor">@color/gray_30</item>
-        <item name="android:paddingVertical">20dp</item>
+        <item name="android:paddingVertical">10dp</item>
 
     </style>
 
